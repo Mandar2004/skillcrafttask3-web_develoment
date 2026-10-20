@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SkillCraft Quiz Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         NAVBAR
+    =============================== -->
+
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            Skill<span>Craft</span>
+        </a>
+
+        <div class="task">
+            TASK 03
+        </div>
+
+    </header>
+
+
+    <!-- ==============================
+         MAIN
+    =============================== -->
+
+    <main class="main-container">
+
+        <div class="quiz-card">
+
+            <!-- Start Screen -->
+
+            <div id="startScreen" class="screen">
+
+                <div class="quiz-icon">
+                    ?
+                </div>
+
+                <div class="tag">
+                    QUIZ GAME APPLICATION
+                </div>
+
+                <h1>
+                    Test Your <span>Knowledge</span>
+                </h1>
+
+                <p>
+                    Answer the questions and see how much
+                    you know. Choose the correct answer
+                    and earn points.
+                </p>
+
+                <div class="features">
+
+                    <div>
+                        <strong>5</strong>
+                        <small>Questions</small>
+                    </div>
+
+                    <div>
+                        <strong>MCQ</strong>
+                        <small>Question Type</small>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <small>Interactive</small>
+                    </div>
+
+                </div>
+
+                <button
+                    class="start-button"
+                    id="startBtn">
+
+                    Start Quiz
+
+                </button>
+
+            </div>
+
+
+            <!-- Quiz Screen -->
+
+            <div
+                id="quizScreen"
+                class="screen hidden">
+
+                <!-- Quiz Header -->
+
+                <div class="quiz-header">
+
+                    <span id="questionNumber">
+                        Question 1 of 5
+                    </span>
+
+                    <span id="score">
+                        Score: 0
+                    </span>
+
+                </div>
+
+
+                <!-- Progress -->
+
+                <div class="progress-container">
+
+                    <div
+                        class="progress-bar"
+                        id="progressBar">
+                    </div>
+
+                </div>
+
+
+                <!-- Question -->
+
+                <div class="question-area">
+
+                    <div
+                        class="question-type"
+                        id="questionType">
+
+                        SINGLE SELECT
+
+                    </div>
+
+                    <h2 id="question">
+                        Question goes here
+                    </h2>
+
+                </div>
+
+
+                <!-- Options -->
+
+                <div
+                    class="options"
+                    id="options">
+
+                </div>
+
+
+                <!-- Next Button -->
+
+                <button
+                    class="next-button"
+                    id="nextBtn"
+                    disabled>
+
+                    Next Question →
+
+                </button>
+
+            </div>
+
+
+            <!-- Result Screen -->
+
+            <div
+                id="resultScreen"
+                class="screen hidden">
+
+                <div class="result-icon">
+                    🏆
+                </div>
+
+                <div class="tag">
+                    QUIZ COMPLETED
+                </div>
+
+                <h1>
+                    Your Final <span>Score</span>
+                </h1>
+
+                <div class="final-score">
+
+                    <span id="finalScore">
+                        0
+                    </span>
+
+                    <small>
+                        / 5
+                    </small>
+
+                </div>
+
+                <p id="resultMessage">
+                    Great job!
+                </p>
+
+                <div class="result-details">
+
+                    <div>
+                        <strong id="correctAnswers">
+                            0
+                        </strong>
+
+                        <small>
+                            Correct
+                        </small>
+                    </div>
+
+                    <div>
+                        <strong id="wrongAnswers">
+                            0
+                        </strong>
+
+                        <small>
+                            Wrong
+                        </small>
+                    </div>
+
+                </div>
+
+                <button
+                    class="start-button"
+                    id="restartBtn">
+
+                    Play Again
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer>
+
+        © 2026 SkillCraft Internship
+        • Task 03
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
